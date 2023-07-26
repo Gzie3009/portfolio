@@ -1,9 +1,10 @@
 "use client";
 import { SocialIcon } from "react-social-icons";
 import { motion } from "framer-motion";
+import Link from "next/link";
 export default function Header() {
   return (
-    <header className="sticky top-0 flex items-start justify-between max-w-4xl mx-auto z-20 xl:items-center p-5">
+    <header className="sticky top-0 left-0 right-0 flex items-start justify-between max-w-4xl mx-auto z-20 xl:items-center p-5">
       <motion.div
         initial={{
           x: -500,
@@ -66,10 +67,11 @@ export default function Header() {
           network="email"
           fgColor="#0DB760"
           bgColor="transparent"
+          url="#contact"
         />
-        <p className="uppercase hidden md:inline-flex text-sm text-[#0DB760]">
+        <Link href="#contact" className="uppercase hidden md:inline-flex text-sm text-[#0DB760]">
           Get In Touch
-        </p>
+        </Link>
       </motion.div>
     </header>
   );
