@@ -4,6 +4,8 @@ import { Cursor, useTypewriter } from "react-simple-typewriter";
 import BackgroundCircles from "./BackgroundCircles";
 import Image from "next/image";
 import Link from "next/link";
+import profilePic from "../../assets/Mrinmoy.jpeg";
+import { motion } from "framer-motion";
 type Props = {};
 export default function Hero({}: Props) {
   const [text, useText] = useTypewriter({
@@ -18,11 +20,31 @@ export default function Hero({}: Props) {
   return (
     <div className="h-screen flex flex-col items-center justify-center pt-48 space-y-8 text-center overflow-hidden">
       <BackgroundCircles />
-      <img
-        className="relative rounded-full h-32 w-32 object-cover"
-        src="https://images.unsplash.com/photo-1588943211346-0908a1fb0b01?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1035&q=80"
-        alt=""
-      ></img>
+      <motion.div initial={{
+        y:-200,
+        opacity:0,
+        scale:2,
+      }}
+      whileInView={{
+        y:0,
+        opacity:1,
+        scale:1,
+      }}
+      transition={{
+        duration:1.5,
+      }}
+      viewport={{once:true}}
+      
+      >
+
+        <Image
+          className="relative rounded-full h-40 w-40 object-cover"
+          src={profilePic}
+          alt="Mrinmoy Saikia' Image"
+          width={200}
+          height={200}
+        ></Image>
+      </motion.div>
       <div className="z-20">
         <h2 className="text-lg lg:ml-3 uppercase text-[#0DB760] pb-2 tracking-[15px] font-bold">
           Frontend Developer
@@ -42,7 +64,7 @@ export default function Hero({}: Props) {
             <button className="heroButton">Skills</button>
           </Link>
           <Link href="#projects">
-            <button className="heroButton">Project</button>
+            <button className="heroButton mt-2 sm:mt-0">Project</button>
           </Link>
         </div>
       </div>

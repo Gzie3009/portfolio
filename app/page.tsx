@@ -6,6 +6,9 @@ import Header from "@/components/header/header";
 import Hero from "@/components/hero/Hero";
 import Projects from "@/components/projects/Projects";
 import { Metadata } from "next";
+import Link from "next/link";
+import { ImProfile } from "react-icons/im";
+import {AiOutlineDownload} from "react-icons/ai"
 
 export const metadata: Metadata = {
   title: "Mrinmoy Saikia Portfolio Website",
@@ -36,6 +39,12 @@ export default function Home() {
         <section id="contact" className="snap-start">
           <Contact />
         </section>
+        <Link href="/MrinmoySaikia_Resume.pdf" target="_blank" className="absolute bottom-10 left-2 rounded-full group" >
+          <button className="sticky flex items-center group-hover:border-2 rounded-lg p-2 border-green-600 bg-white z-20">
+            <ImProfile className="w-14 h-14 group-hover:h-20 group-hover:w-20 transition-all ease-in-out duration-200 overflow-hidden text-[#0DB760] pr-5"/>
+            <p className="hidden group-hover:flex items-center space-x-2 text-green-600 duration-200 transition-all ease-in-out">Download Resume <AiOutlineDownload className="h-10 w-10"/></p>
+          </button>
+        </Link>
       </main>
     </>
   );

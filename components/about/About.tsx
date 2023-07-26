@@ -1,26 +1,30 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
+import Mrinmoy2 from "../../assets/Mrinmoy2.png";
 type Props = {};
 
 export default function About({}: Props) {
   return (
     <motion.div
-    initial={{
-        opacity:0
-    }}
-    transition={{
-        duration:1.2
-    }}
-    whileInView={{
-        opacity:1
-    }}
-    viewport={{once:true}}
-    className="h-screen flex flex-col relative text-center md:text-left md:flex-row max-w-4xl px-10 justify-evenly mx-auto items-center">
+      initial={{
+        opacity: 0,
+      }}
+      transition={{
+        duration: 1.2,
+      }}
+      whileInView={{
+        opacity: 1,
+      }}
+      viewport={{ once: true }}
+      className="h-screen flex flex-col relative text-center md:text-left md:flex-row max-w-4xl px-10 justify-evenly mx-auto items-center"
+    >
       <h3 className="absolute top-24 uppercase tracking-[20px] text-[#0DB760] font-semibold text-2xl">
         About
       </h3>
-      <motion.img
+      <motion.div
+      className="-mb-32 lg:-mb-0"
         initial={{
           x: -200,
           opacity: 0,
@@ -33,9 +37,15 @@ export default function About({}: Props) {
           opacity: 1,
         }}
         viewport={{ once: true }}
-        src="https://images.unsplash.com/photo-1588943211346-0908a1fb0b01?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1035&q=80"
-        className="-mb-20 md:-mb-0 w-56 h-56 rounded-full object-cover flex-shrink-0 md:rounded-lg md:w-64 md:h-96 xl:h-[500px] xl:w-[600px]"
-      />
+      >
+        <Image
+          alt="Mrinmoy's Image"
+          height={100}
+          width={100}
+          src={"https://i.imgur.com/6sdTmRY.jpg"}
+          className=" h-full rounded-full object-cover flex-shrink-0 md:rounded-lg w-[300vw]"
+        />
+      </motion.div>
       <div className="space-y-10 px-0 md:px-10">
         <h4 className="text-4xl font-semibold">
           Here is a{" "}
