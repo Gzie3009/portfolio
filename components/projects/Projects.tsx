@@ -63,7 +63,7 @@ export default function Projects({}: Props) {
         Projects
       </h3>
 
-      <div className="md:-mt-32 relative w-full flex items-start overflow-x-scroll scrollbar scrollbar-track-[#0DB760]/20 scrollbar-thumb-[#0DB760] overflow-y-hidden snap-x snap-mandatory z-20">
+      <div className="md:-mt-32 relative w-full flex items-start overflow-x-scroll scrollbar scrollbar-track-[#0DB760]/20 scrollbar-thumb-[#0DB760] overflow-y-hidden snap-x snap-mandatory z-10">
         {projects.map((project, index) => {
           return (
             <div

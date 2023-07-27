@@ -50,7 +50,7 @@ export default function Experience({}: Props) {
         "Acquired proficiency in Next.js, a powerful React framework, enabling server-side rendering and enhancing web application performance.",
       ],
       startedAt: "12th June , 2023",
-      endedAt: "12th August , 2023",
+      endedAt: "Current Company",
     },
     {
       logo: stunhaul,
