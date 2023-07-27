@@ -11,32 +11,32 @@ export default function Hero({}: Props) {
   const [text, useText] = useTypewriter({
     words: [
       "Hi, The Name's Mrinmoy Saikia",
+      "I go by the nickname Gzie3009",
       "Guy-Who-Loves-Great-UI/UX",
-      "<But-Loves-To-Code-More/>",
+      "But-Loves-To-Code-More",
     ],
     loop: true,
-    delaySpeed: 2000,
+    delaySpeed: 3000,
   });
   return (
     <div className="h-screen flex flex-col items-center justify-center pt-48 space-y-8 text-center overflow-hidden">
       <BackgroundCircles />
-      <motion.div initial={{
-        y:-200,
-        opacity:0,
-        scale:2,
-      }}
-      whileInView={{
-        y:0,
-        opacity:1,
-        scale:1,
-      }}
-      transition={{
-        duration:1.5,
-      }}
-      viewport={{once:true}}
-      
+      <motion.div
+        initial={{
+          y: -200,
+          opacity: 0,
+          scale: 2,
+        }}
+        whileInView={{
+          y: 0,
+          opacity: 1,
+          scale: 1,
+        }}
+        transition={{
+          duration: 1.5,
+        }}
+        viewport={{ once: true }}
       >
-
         <Image
           className="relative rounded-full h-40 w-40 object-cover"
           src={profilePic}
