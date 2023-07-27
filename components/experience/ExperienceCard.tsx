@@ -48,7 +48,7 @@ export default function ExperienceCard({
           <h4 className="text-xl md:text-4xl font-bold w-mmax">
             {role} at {company}
           </h4>
-          <p className="uppercase py-5 text-gray-600 tracking-[3px] font-black">
+          <p className="uppercase py-5 text-gray-600 tracking-[3px] font-black underline decoration-red-600 underline-offset-8">
             {startedAt} - {endedAt}
           </p>
         </div>

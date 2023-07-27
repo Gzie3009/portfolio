@@ -63,8 +63,8 @@ export default function Experience({}: Props) {
         "Collaborated with cross-functional teams, including designers and backend developers, to translate business requirements into innovative web designs and features.",
         "Demonstrated meticulous attention to detail, delivering high-quality code and ensuring seamless functionality across diverse devices and browsers.",
       ],
-      startedAt: "12th June , 2023",
-      endedAt: "12th August , 2023",
+      startedAt: "12th December , 2022",
+      endedAt: "12th March , 2023",
     },
   ];
   return (

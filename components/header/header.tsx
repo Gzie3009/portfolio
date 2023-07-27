@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 export default function Header() {
   return (
-    <header className="sticky top-0 left-0 right-0 flex items-start justify-between max-w-4xl mx-auto z-20 xl:items-center p-5">
+    <header className="sticky top-0 left-0 right-0 flex items-start justify-between px-3 md:px-32 lg:px-56 mx-auto z-20 xl:items-center p-5 bg-white w-full">
       <motion.div
         initial={{
           x: -500,
