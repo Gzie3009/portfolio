@@ -19,24 +19,24 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
-      <main className="h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scroll-smooth scrollbar scrollbar-track-[#0DB760]/20 scrollbar-thumb-[#0DB760] selection:bg-rose-100">
+      <main className="h-screen overflow-y-scroll overflow-x-hidden z-0 scroll-smooth scrollbar scrollbar-track-[#0DB760]/20 scrollbar-thumb-[#0DB760] selection:bg-rose-100">
         <Header />
-        <section id="hero" className="snap-start">
+        <section id="hero" className="">
           <Hero />
         </section>
-        <section id="about" className="snap-start">
+        <section id="about" className="">
           <About />
         </section>
-        <section id="experience" className="snap-start">
+        <section id="experience" className="">
           <Experience />
         </section>
-        <section id="skills" className="snap-start">
+        <section id="skills" className="">
           <Skills />
         </section>
-        <section id="projects" className="snap-start">
+        <section id="projects" className="">
           <Projects />
         </section>
-        <section id="contact" className="snap-start">
+        <section id="contact" className="">
           <Contact />
         </section>
         <Link href="/MrinmoySaikia_Resume.pdf" target="_blank" className="absolute bottom-2 left-2 rounded-full group" >

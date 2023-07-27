@@ -19,7 +19,7 @@ export default function Hero({}: Props) {
     delaySpeed: 3000,
   });
   return (
-    <div className="h-screen flex flex-col items-center justify-center pt-48 space-y-8 text-center overflow-hidden">
+    <div className="h-[90vh] flex flex-col items-center justify-center pt-48 space-y-8 text-center">
       <BackgroundCircles />
       <motion.div
         initial={{
