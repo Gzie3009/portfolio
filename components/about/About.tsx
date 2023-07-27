@@ -70,7 +70,7 @@ export default function About({}: Props) {
           background
         </h4>
         <p className="text-md text-justify">
-          I'm <b>Mrinmoy Saikia</b>, a passionate and highly skilled Frontend developer
+          I&apos;m <b>Mrinmoy Saikia</b>, a passionate and highly skilled Frontend developer
           based in Kharar, Punjab. With a keen eye for detail and expertise in
           frontend technologies, including React.js, Next.js, and TypeScript, I
           thrive on building user-friendly and visually appealing web
