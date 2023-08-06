@@ -19,9 +19,9 @@ export default function Projects({}: Props) {
   const projects: Project[] = [
     {
       src: undisclosed,
-      title: "CU FOODS",
+      title: "FOOD DELIVERY APP",
       projectSummary:
-        "Since April 2023, I have been an integral part of the CU FOODS team, contributing to the development of an innovative app aimed at tackling the issue of long queues at shops within Chandigarh University. As a Frontend Developer, I have taken on the responsibility of designing and implementing the app's frontend using cutting-edge technologies like React and Tailwind CSS. My goal has been to create a seamless and intuitive food ordering experience for users, ensuring they can easily place orders and make payments online. Additionally, I have been instrumental in incorporating essential features, such as a vendor portal and real-time updates, which have significantly improved overall user satisfaction. In a collaborative effort with the team, I continuously strive to enhance the app's functionality and user experience, making CU FOODS a game-changer within the university community.",
+        "Since April 2023, I have been an integral part of the A FOOD DELIVERY APP's team, contributing to the development of an innovative app aimed at tackling the issue of long queues at shops at Universities . As a Frontend Developer, I have taken on the responsibility of developing and implementing the app's frontend using cutting-edge technologies like React,Redux-Toolkit and Tailwind CSS. My goal has been to create a seamless and intuitive food ordering experience for users, ensuring they can easily place orders and make payments online. Additionally, I have been instrumental in incorporating essential features, such as a vendor portal and real-time updates, which have significantly improved overall user satisfaction. In a collaborative effort with the team, I continuously strive to enhance the app's functionality and user experience, making CU FOODS a game-changer within the university communities.",
     },
     {
       src: carmania,
