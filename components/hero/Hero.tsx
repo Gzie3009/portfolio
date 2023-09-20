@@ -43,7 +43,7 @@ export default function Hero({}: Props) {
           alt="Mrinmoy Saikia' Image"
           width={200}
           height={200}
-        ></Image>
+        />
       </motion.div>
       <div className="z-20">
         <h2 className="text-lg lg:ml-3 uppercase text-[#0DB760] pb-2 tracking-[15px] font-bold">

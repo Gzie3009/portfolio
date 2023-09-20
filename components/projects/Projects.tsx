@@ -7,6 +7,7 @@ import carmania from "../../assets/camania.png";
 import marcos from "../../assets/marcos.png";
 import moviedekho from "../../assets/moviedekho.png";
 import Link from "next/link";
+import bruble from "../../assets/bruble.png";
 type Props = {};
 type Project = {
   src: StaticImageData;
@@ -17,6 +18,13 @@ type Project = {
 
 export default function Projects({}: Props) {
   const projects: Project[] = [
+    {
+      src: bruble,
+      title: "Bruble",
+      projectSummary:
+        "Excited to introduce 'Bruble,' a next-gen real-time messaging platform developed under the guidance of Antonio Erdeljac. Utilizing an array of cutting-edge technologies, the platform serves as a comprehensive learning journey. It covers a wide range of features, including real-time messaging via Pusher, OAuth integrations with NextAuth, and a sleek, responsive UI developed with Tailwind CSS. File uploads are facilitated through Cloudinary CDN, and various other functionalities like group chats, message read receipts, and user profile customization are also incorporated.",
+      link: "https://bruble-chat.vercel.app/",
+    },
     {
       src: undisclosed,
       title: "FOOD DELIVERY APP",

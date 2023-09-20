@@ -8,12 +8,13 @@ import Projects from "@/components/projects/Projects";
 import { Metadata } from "next";
 import Link from "next/link";
 import { ImProfile } from "react-icons/im";
-import {AiOutlineDownload} from "react-icons/ai"
+import { AiOutlineDownload } from "react-icons/ai";
 
 export const metadata: Metadata = {
-  title: "Mrinmoy Saikia Portfolio Website",
+  title:
+    "Mrinmoy Saikia - Frontend Developer specializing in Next.js, React.js",
   description:
-    "This is the portfolio website which belongs to Mrinmoy Saikia who is a full stack developer with expertise in frontend development",
+    "Welcome to the portfolio of Mrinmoy Saikia, a frontend developer skilled in Next.js, React.js, TailwindCSS, TypeScript, and more. Explore projects, skills, and work experience.",
 };
 
 export default function Home() {
@@ -39,10 +40,16 @@ export default function Home() {
         <section id="contact" className="">
           <Contact />
         </section>
-        <Link href="/MrinmoySaikia_Resume.pdf" target="_blank" className="absolute bottom-2 left-2 rounded-full group" >
+        <Link
+          href="/MrinmoySaikia_Resume.pdf"
+          target="_blank"
+          className="absolute bottom-2 left-2 rounded-full group"
+        >
           <button className="sticky flex items-center group-hover:border-2 rounded-lg px-2 py-1 border-green-600 z-20 group-hover:bg-white">
-            <ImProfile className="w-14 h-14 group-hover:h-20 group-hover:w-20 transition-all ease-in-out duration-200 overflow-hidden text-[#0DB760] pr-5"/>
-            <p className="hidden group-hover:flex items-center space-x-2 text-green-600 duration-200 transition-all ease-in-out">Download Resume <AiOutlineDownload className="h-10 w-10"/></p>
+            <ImProfile className="w-14 h-14 group-hover:h-20 group-hover:w-20 transition-all ease-in-out duration-200 overflow-hidden text-[#0DB760] pr-5" />
+            <p className="hidden group-hover:flex items-center space-x-2 text-green-600 duration-200 transition-all ease-in-out">
+              Download Resume <AiOutlineDownload className="h-10 w-10" />
+            </p>
           </button>
         </Link>
       </main>

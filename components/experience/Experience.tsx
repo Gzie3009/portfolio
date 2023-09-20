@@ -15,6 +15,9 @@ import typescript from "../../assets/typescript.png";
 import github from "../../assets/github.png";
 import redux from "../../assets/redux.webp";
 import materialUi from "../../assets/materialUi.png";
+import nodejs from "../../assets/nodejs.png";
+import express from "../../assets/expressjs.png";
+import mongo from "../../assets/mongodb.webp";
 type Props = {};
 type Experience = {
   logo: StaticImageData;
@@ -29,8 +32,36 @@ export default function Experience({}: Props) {
   const experiences: Experience[] = [
     {
       logo: wictronix,
+      role: "Full Stack Developer Intern",
+      company: "WictroniX Pvt. Ltd.",
+      technologies: [
+        nodejs,
+        express,
+        mongo,
+        nextjs,
+        reactjs,
+        redux,
+        html,
+        css,
+        js,
+        tailwind,
+        typescript,
+        github,
+        materialUi,
+      ],
+      summaryPoints: [
+        "Led frontend development of an E-commerce platform with Next.js and React, focusing on key features like dynamic product listings, cart functionality, and user authentication, thereby creating an optimized UI/UX with Tailwind CSS.",
+        "Contributed to backend tasks through the integration of RESTful APIs and server-side logic using Node.js and Express, supporting secure data transactions and a seamless shopping experience.",
+        "Enhanced application performance and SEO by implementing server-side rendering with Next.js, while utilizing Redux for scalable and maintainable state management.",
+        "Collaborated effectively with cross-functional teams and managed version control via Git, ensuring high-quality code, and expedited feature releases. Gained hands-on experience in Material UI for design consistency.",
+      ],
+      startedAt: "28th August , 2023",
+      endedAt: "Present",
+    },
+    {
+      logo: wictronix,
       role: "React.js Developer Intern",
-      company: "Wictronix Pvt. Ltd.",
+      company: "WictroniX Pvt. Ltd.",
       technologies: [
         nextjs,
         reactjs,
@@ -50,7 +81,7 @@ export default function Experience({}: Props) {
         "Acquired proficiency in Next.js, a powerful React framework, enabling server-side rendering and enhancing web application performance.",
       ],
       startedAt: "12th June , 2023",
-      endedAt: "Current Company",
+      endedAt: "4th August, 2023",
     },
     {
       logo: stunhaul,

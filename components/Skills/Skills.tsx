@@ -16,6 +16,9 @@ import materialUi from "../../assets/materialUi.png";
 import express from "../../assets/expressjs.png";
 import node from "../../assets/nodejs.png";
 import mongo from "../../assets/mongodb.webp";
+import pusher from "../../assets/pusher.webp";
+import prisma from "../../assets/prisma.jpeg";
+import nextAuth from "../../assets/next-auth.png";
 type Props = {};
 type skill = {
   src: StaticImageData;
@@ -26,19 +29,19 @@ export default function Skills({}: Props) {
   const skills: skill[] = [
     {
       src: nextjs,
-      proficiency: 40,
+      proficiency: 70,
     },
     {
       src: reactjs,
-      proficiency: 75,
+      proficiency: 85,
     },
     {
       src: redux,
-      proficiency: 80,
+      proficiency: 90,
     },
     {
       src: tailwind,
-      proficiency: 90,
+      proficiency: 95,
     },
     {
       src: html,
@@ -50,15 +53,15 @@ export default function Skills({}: Props) {
     },
     {
       src: js,
-      proficiency: 70,
+      proficiency: 80,
     },
     {
       src: typescript,
-      proficiency: 60,
+      proficiency: 80,
     },
     {
       src: github,
-      proficiency: 80,
+      proficiency: 90,
     },
     {
       src: materialUi,
@@ -66,15 +69,27 @@ export default function Skills({}: Props) {
     },
     {
       src: node,
-      proficiency: 50,
+      proficiency: 65,
     },
     {
       src: express,
-      proficiency: 50,
+      proficiency: 70,
     },
     {
       src: mongo,
+      proficiency: 60,
+    },
+    {
+      src: prisma,
+      proficiency: 40,
+    },
+    {
+      src: pusher,
       proficiency: 50,
+    },
+    {
+      src: nextAuth,
+      proficiency: 70,
     },
   ];
   return (
@@ -96,8 +111,7 @@ export default function Skills({}: Props) {
       </h3>
       <h3 className="uppercase tracking-[3px] text-sm text-[#0DB760] md:flex px-2 py-10">
         <span className="hidden lg:block">Hover &nbsp; </span>
-        <span className="lg:hidden">Click</span> over a skill for
-        proficiency
+        <span className="lg:hidden">Click</span> over a skill for proficiency
       </h3>
       <div className="grid grid-cols-3 md:grid-cols-4 gap-5">
         {skills &&
