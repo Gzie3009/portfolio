@@ -46,8 +46,8 @@ export default function Hero({}: Props) {
         />
       </motion.div>
       <div className="z-20">
-        <h2 className="text-lg lg:ml-3 uppercase text-[#0DB760] pb-2 tracking-[15px] font-bold">
-          Frontend Developer
+        <h2 className="text-lg lg:ml-3 uppercase text-[#0DB760] pb-2 tracking-[10px] font-bold">
+          Full Stack Developer
         </h2>
         <h1 className="text-5xl lg:text-6xl font-semibold scroll-px-10">
           <span>{text}</span>
@@ -55,16 +55,16 @@ export default function Hero({}: Props) {
         </h1>
         <div className="pt-5">
           <Link href="#about">
-            <button className="heroButton">About</button>
+            <button className="heroButton hover:bg-green-500 hover:text-white">About</button>
           </Link>
           <Link href="#experience">
-            <button className="heroButton">Experience</button>
+            <button className="heroButton hover:bg-green-500 hover:text-white">Experience</button>
           </Link>
           <Link href="#skills">
-            <button className="heroButton">Skills</button>
+            <button className="heroButton hover:bg-green-500 hover:text-white">Skills</button>
           </Link>
           <Link href="#projects">
-            <button className="heroButton mt-2 sm:mt-0">Project</button>
+            <button className="heroButton hover:bg-green-500 hover:text-white mt-2 sm:mt-0">Project</button>
           </Link>
         </div>
       </div>
