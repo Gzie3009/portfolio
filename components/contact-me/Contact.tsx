@@ -39,7 +39,7 @@ export default function Contact({}: Props) {
           </div>
           <div className="flex items-center justify-center space-x-5">
             <EnvelopeIcon className="h-7 w-7 animate-pulse text-[#0DB760]" />
-            <p className="text-2xl">dev.work.gzie@gmail.com</p>
+            <p className="text-2xl">mrinmoysaikia868@gmail.com</p>
           </div>
           <div className="flex items-center justify-center space-x-5">
             <MapPinIcon className="h-7 w-7 animate-pulse text-[#0DB760]" />
